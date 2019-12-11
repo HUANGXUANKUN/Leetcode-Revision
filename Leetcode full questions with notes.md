@@ -1,6 +1,10 @@
 # Menu
 
-[TOC]
+- [Menu](#menu)
+- [Main](#main)
+  * [1. Two sums](#1-two-sums)
+
+
 
 # Main
 
