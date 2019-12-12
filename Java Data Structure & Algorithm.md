@@ -2,9 +2,87 @@
 
 
 
+# Data strutures
+
+## If Else Condition
+
+```java
+int a_val = a==null ? 0 : a.val;
+int b_val = b==null ? 0 : b.val;
+```
 
 
-## Inorder
+
+## HashMap
+
+Initialize HashMap with default values;
+
+```java
+// Initialize with no key&value
+private Map<Integer, Integer> map1 = new HashMap<>();
+
+// Initialize with default key&value
+private Map<Integer, Integer> map2 = new HashMap<Integer, Integer>(){
+        {
+            put(0,1);
+            put(1,1);
+        }
+    };
+```
+
+## ArrayDeque
+
+https://www.geeksforgeeks.org/arraydeque-in-java/
+
+ArrayDeque in Java provides a way to apply **resizable-array** in addition to the implementation of the Deque interface. It is also known as **Array Double Ended Queue** or Array Deck. This is a special kind of array that grows and allows users to add or remove an element from both the sides of the queue. Few important features of ArrayDeque are as follows:
+
+- Array deques have **no capacity restrictions** and they grow as necessary to support usage.
+- They are **not thread-safe** which means that in the absence of external synchronization, ArrayDeque does not support concurrent access by multiple threads.
+- **Null elements are prohibited in the ArrayDeque.**
+- ArrayDeque class is likely to be faster than Stack when used as a stack.
+- ArrayDeque class is likely to be faster than LinkedList when used as a queue.
+
+
+
+## Stack
+
+**ArrayDeque<>():**
+
+APIs:
+
+1. add(obj) //cannot add null
+2. removeLast()
+
+```java
+Deque<TreeNode> stack = new ArrayDeque<>();
+stack.add(root);
+TreeNode curr = stack.removeLast();
+```
+
+
+
+**LinkedList<>()**
+
+APIs:
+
+1. add(obj) // can be null
+2. pollLast()
+
+
+
+```java
+LinkedList<TreeNode> stack = new LinkedList<>();
+stack.add(root);
+TreeNode curr = stack.pollLast();
+```
+
+
+
+# Algorithms
+
+## DFS
+
+### Inorder
 
 **1. Using a stack**
 

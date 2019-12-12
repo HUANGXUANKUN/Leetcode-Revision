@@ -4,7 +4,7 @@
 - [Main](#main)
   * [1. Two sums](#1-two-sums)
 
-
+[TOC]
 
 
 
@@ -36,6 +36,13 @@ class Solution {
 Time: O(N)
 
 Space: O(N) 
+
+
+
+## 2. Add Two Numbers
+
+1. Use a dummy head to store the head of the linked list
+2. Append a node(1) at the tails if carry ==1
 
 
 
@@ -104,8 +111,8 @@ class Solution {
             // right sub-branches
             List<TreeNode> right_trees = generate(i+1, end);
             
-            // combine left branches and right branches by G(start, i-1) * G(i+1, 					end)
-            // if start == end, G(start, start-1) return [null], G(start+1, end) 				return [null]. It will only loop once
+            // combine left branches and right branches by G(start, i-1) * G(i+1, 	end)
+            // if start == end, G(start, start-1) return [null], G(start+1, end) return [null]. It will only loop once
             for (TreeNode left : left_trees){
                 for(TreeNode right: right_trees){
                     TreeNode current_root = new TreeNode(i);
@@ -123,6 +130,8 @@ class Solution {
 
 
 ## 96. Unique Binary Search Trees
+
+![img](https://leetcode.com/problems/unique-binary-search-trees/Figures/96_BST.png)
 
 1. Iterate from 0 to n, return G(0, 0, n) 
    1. Base case: If n = 1, return 1.  if n = 2, return 2
