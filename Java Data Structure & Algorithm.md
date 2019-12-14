@@ -11,8 +11,25 @@ int a_val = a==null ? 0 : a.val;
 int b_val = b==null ? 0 : b.val;
 ```
 
-```javascript
-this is a program
+## Array
+
+```java
+int[][] visited = new int[rows][cols];
+for(int[] a:visited){
+    for (int b : a){
+        System.out.print(b);
+    }
+    System.out.println("");
+}
+```
+
+output:
+
+```
+00000
+00000
+00000
+00000
 ```
 
 

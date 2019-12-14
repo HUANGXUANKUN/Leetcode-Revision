@@ -1,3 +1,9 @@
+
+
+[TOC]
+
+
+
 # Algorithms
 
 ## DFS
@@ -8,7 +14,7 @@
 
 1. Create a stack using `ArrayDeque<>()`
 2. Recursively check if stack is not empty or root is not null 
-   1. Push root to the stack
+   1. Push `root` to the stack
    2. Check if `root.left` exists. If yes, repeat step 1 
    3. `root = stack.pop()`
    4. Check root.right
