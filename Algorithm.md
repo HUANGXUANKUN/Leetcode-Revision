@@ -2,11 +2,21 @@
 
 [TOC]
 
-
-
 # Algorithms
 
 ## DFS
+
+### Common use
+
+```java
+int[][] directions = {{0,1}, {0,-1}, {1,0}, {-1, 0}};
+
+int[][] visited = new int[rows][cols];
+
+Queue<int[]> q = new LinkedList<>();
+```
+
+
 
 ### Inorder
 
