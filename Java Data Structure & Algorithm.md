@@ -2,9 +2,31 @@
 
 # Data structures
 
+### Reverse
+
+**Array** (Write a **`reverse`** method)
+
+```java
+public void reverse(int[] nums, int start, int end) {
+        while (start < end) {
+            int temp = nums[start];
+            nums[start] = nums[end];
+            nums[end] = temp;
+            start++;
+            end--;
+        }
+    }
+
+int [] a = {1,2};
+reverse(a, 0, a.length-1);
+// a = {2, 1}
+```
+
+
+
 ## Sorting
 
-### Inverse sort
+### Reverse sort
 
 **list**
 
@@ -19,6 +41,22 @@ Arrays.sort(array, Collections.reverseOrder());
 ```
 
 `Collections.reverseOrder()` returns a comparator for reverser sort.
+
+
+
+an alternative could be (for numbers!!!)
+
+1. multiply the Array by -1
+2. sort
+3. multiply once again with -1
+
+Pseudo code:
+
+```java
+array = -Arrays.sort(-array)
+```
+
+
 
 ## Auto-Unboxing and Cache
 
@@ -199,6 +237,21 @@ APIs:
 LinkedList<TreeNode> stack = new LinkedList<>();
 stack.add(root);
 TreeNode curr = stack.pollLast();
+```
+
+
+
+## String
+
+### Split
+
+use `split("\\s+") ` to split all spaces. 
+
+```java
+String a = "ab  cb  d";
+String[] b = a.split("\\s+");
+
+// b = ["ab", "cb", "d"]
 ```
 
 
