@@ -2,7 +2,22 @@
 
 
 
-# Data strutures
+# Data structures
+
+## Digit and Letter
+
+`Character.isDigit(string.charAt(index))` ([JavaDoc](https://docs.oracle.com/javase/10/docs/api/java/lang/Character.html#isDigit(char))) will return true if it's a digit
+`Character.isLetter(string.charAt(index))` ([JavaDoc](https://docs.oracle.com/javase/10/docs/api/java/lang/Character.html#isLetter(char))) will return true if it's a letter
+
+### Conversion between char and int
+
+```java
+char five = '5; 
+int x = five - '0';
+// x = 5
+```
+
+
 
 ## If Else Condition
 
