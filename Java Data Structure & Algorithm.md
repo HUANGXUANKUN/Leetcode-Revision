@@ -1,11 +1,26 @@
 # Abstract
 
-# Data strutures
+# Data structures
+
+## Sorting
+
+### Inverse sort
+
+**list**
+
+```java
+Collections.sort(list, Collections.reverseOrder());
+```
+
+**array**
+
+```java
+Arrays.sort(array, Collections.reverseOrder());
+```
+
+`Collections.reverseOrder()` returns a comparator for reverser sort.
 
 ## Auto-Unboxing and Cache
-
-<<<<<<< HEAD
-# Data structures
 
 ## Digit and Letter
 

@@ -12,5 +12,7 @@ spring-core.jar
 
 spring-expression.jar
 
+logging.jar
+
 
 
